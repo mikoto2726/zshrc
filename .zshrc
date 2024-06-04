@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -140,7 +139,6 @@ setopt auto_cd
 setopt no_flow_control
 
 
-=======
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
@@ -402,4 +400,4 @@ fi
 
 alias cat='batcat'
 alias clip='xsel --clipboard --input'
->>>>>>> 3e8a4a1 (kali)
+
