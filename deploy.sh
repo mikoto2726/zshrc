@@ -1,6 +1,6 @@
 #!/bin/bash
 # 配置したい設定ファイル
-dotfiles=(.zshrc)
+dotfiles=(.zshrc, .p10k.zsh)
 
 # dotfilesディレクトリのパスを取得
 dotfiles_dir=$(dirname "$(realpath "$0")")
