@@ -401,3 +401,6 @@ fi
 alias cat='batcat'
 alias clip='xsel --clipboard --input'
 
+PS1='[%~]- $'
+
+neofetch
