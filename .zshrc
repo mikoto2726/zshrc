@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 
 #################################  HISTORY  #################################
 # history
-HISTFILE=$HOME/.zsh-history # 履歴を保存するファイル
+HISTFILE=$HOME/dotfiles/.zsh-history # 履歴を保存するファイル
 HISTSIZE=100000             # メモリ上に保存する履歴のサイズ
 SAVEHIST=1000000            # 上述のファイルに保存する履歴のサイズ
 
