@@ -1,0 +1,15 @@
+: 1717529964:0;cd dotfiles
+: 1717529968:0;ls -la
+: 1717529979:0;git pull origin main
+: 1717529990:0;source dotfiles/.zshrc
+: 1717529996:0;ls -la
+: 1717530007:0;source dotfiles/.zshrc
+: 1717530015:0;cd
+: 1717530017:0;source dotfiles/.zshrc
+: 1717530064:0;cd dotfiles
+: 1717530066:0;vim .zshrc
+: 1717530121:0;source .zshrc
+: 1717530132:0;vim .zshrc
+: 1717530218:0;source .zshrc
+: 1717530242:0;vim .zshrc
+: 1717530286:0;source .zshrc
