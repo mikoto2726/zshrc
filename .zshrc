@@ -18,11 +18,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-<<<<<<< HEAD
 alias cat='batcat'
 alias clip='xsel --clipboard --input'
-=======
->>>>>>> 9f5b70dbd1e6660e35c371a35788bd57b5cbac13
 
 
 # history
