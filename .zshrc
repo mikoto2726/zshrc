@@ -10,13 +10,13 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
-	git
-       	z
-       	zsh-autosuggestions
-       	zsh-syntax-highlighting
-       	zsh-completions  # 補完機能を追加
-       	fzf  # ファジーファインダーで検索を素早く
+    git
+    z
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-completions
 )
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -46,4 +46,5 @@ setopt no_beep # ビープ音を無効化
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 
