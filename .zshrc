@@ -14,13 +14,21 @@ plugins=(
        	z
        	zsh-autosuggestions
        	zsh-syntax-highlighting
+       	zsh-completions  # 補完機能を追加
+       	fzf  # ファジーファインダーで検索を素早く
 )
 
 source $ZSH/oh-my-zsh.sh
 
+# Alias
 alias cat='batcat'
 alias c='xsel --clipboard --input'
+alias ll='ls -alF' # 詳細表示のためのエイリアス
+alias grep='grep --color=auto' # grepの出力に色をつける
+alias k='kubectl'
 
+# fzf key bindings and fuzzy auto-completion
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # history
 HISTFILE=$HOME/.zsh-history # 履歴を保存するファイル
@@ -31,5 +39,11 @@ SAVEHIST=1000000            # 上述のファイルに保存する履歴のサ�
 setopt inc_append_history   # 実行時に履歴をファイルにに追加していく
 setopt share_history        # 履歴を他のシェルとリアルタイム共有する
 
+# パフォーマンスの最適化
+setopt prompt_subst
+setopt autocd  # ディレクトリ名のみで移動可能にする
+setopt no_beep # ビープ音を無効化
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
