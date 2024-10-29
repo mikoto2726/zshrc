@@ -20,5 +20,5 @@ git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zs
 git clone https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k  
 ```
 source .zshrc  
-
-
+sudo apt install bat  
+sudo apt install xsel  
