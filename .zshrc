@@ -48,3 +48,9 @@ setopt no_beep # ビープ音を無効化
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+export PATH="$HOME/anaconda3/bin:$PATH"
+source $HOME/anaconda3/etc/profile.d/conda.sh
+
+export PATH=$PATH:/snap/bin
+
+alias ghidra="~/tools/ghidra_11.2.1_PUBLIC/ghidraRun"
