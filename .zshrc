@@ -50,7 +50,25 @@ setopt no_beep # ビープ音を無効化
 
 export PATH="$HOME/anaconda3/bin:$PATH"
 source $HOME/anaconda3/etc/profile.d/conda.sh
-
 export PATH=$PATH:/snap/bin
 
 alias ghidra="~/tools/ghidra_11.2.1_PUBLIC/ghidraRun"
+
+
+alias discord='discord --enable-features=UseOzonePlatform --ozone-platform=x11'
+alias slack='slack --enable-features=UseOzonePlatform --ozone-platform=x11'
+
+export QT_IM_MODULE=fcitx
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export PATH=/usr/local/bin:$PATH
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/kali/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/kali/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/kali/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/kali/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
