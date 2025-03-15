@@ -26,6 +26,8 @@ alias c='xsel --clipboard --input'
 alias ll='ls -alF' # 詳細表示のためのエイリアス
 alias grep='grep --color=auto' # grepの出力に色をつける
 alias k='kubectl'
+alias ls='exa --icons'
+alias cdd='cd $(dirname $_)'
 
 # fzf key bindings and fuzzy auto-completion
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -72,3 +74,18 @@ if [ -f '/home/kali/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/ka
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/kali/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/kali/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
+
+# fnm
+FNM_PATH="/home/kali/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/kali/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# fnm
+FNM_PATH="/home/kali/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/kali/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+export PATH="/home/kali/.local/share/solana/install/active_release/bin:$PATH"
